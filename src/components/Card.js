@@ -19,7 +19,7 @@ function Card({ data }) {
           {Math.round(data.main.temp)}c
         </div>
         <div className="other  d-flex align-items-center justify-content-center">
-          humidity: {data.main.humidity}
+          humidity: {data.main.humidity}%
           <br />
           wind speed: {data.wind.speed}km/h
         </div>

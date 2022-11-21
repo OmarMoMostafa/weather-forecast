@@ -9,7 +9,7 @@ function App() {
 
   const fetchUrl = async (city) => {
     if (city) {
-      const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=714f6962437cea26d7f94084321b1e57`;
+      const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=714f6962437cea26d7f94084321b1e57&units=metric`;
       fetch(url)
         .then((data) => data.json())
         .then((res) => {
